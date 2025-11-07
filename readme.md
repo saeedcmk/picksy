@@ -4,13 +4,9 @@
   <a href="https://usepicksy.vercel.app">Visit <strong>Picksy</strong></a>
 </div>
 
----
-
 ## Overview
 
 **Picksy** is a lightweight, open-source web app that helps you make random choices effortlessly. Add your options, hit the button, and let Picksy pick for you — simple, beautiful, and just a little whimsical.
-
----
 
 ## Features
 
@@ -18,14 +14,10 @@
 - Randomly pick one with a single click
 - Clean, minimal interface
 
----
-
 ## Future Ideas
 
 - Save previous lists locally
 - Shareable choice sets
-
----
 
 ## Contributing
 
