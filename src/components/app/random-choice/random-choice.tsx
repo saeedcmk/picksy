@@ -26,8 +26,6 @@ function RandomChoice() {
 
 	return (
 		<div className="flex w-full max-w-md flex-col items-center justify-center gap-6 p-4">
-			<h1 className="text-3xl font-semibold">Random Choice</h1>
-
 			<RandomChoiceAdd onAdd={addChoice} />
 
 			<RandomChoiceList choices={choices} onRemove={removeChoice} />
