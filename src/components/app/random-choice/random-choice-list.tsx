@@ -12,9 +12,12 @@ function RandomChoiceList({
 		choices.length > 0 && (
 			<ul className="w-full max-w-md space-y-2">
 				{choices.map((choice, index) => (
-					<li key={index} className="flex gap-3 pb-2 not-last:border-b">
-						<div className="flex size-8 shrink-0 items-center justify-center rounded-lg border">
-							{index + 1}
+					<li
+						key={index}
+						className="flex cursor-default gap-3 pb-2 not-last:border-b"
+					>
+						<div className="flex h-8 w-fit shrink-0 items-center justify-center rounded-lg">
+							{index + 1}.
 						</div>
 						<div className="grow py-1">{choice}</div>
 						<div className="w-fit shrink-0">
