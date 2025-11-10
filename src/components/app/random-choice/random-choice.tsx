@@ -12,6 +12,11 @@ function RandomChoice() {
 		setSelected(null);
 	};
 
+	const removeChoice = (choice: string) => {
+		setChoices((prev) => prev.filter((c) => c !== choice));
+		setSelected(null);
+	};
+
 	const pickRandom = () => {
 		if (choices.length > 0) {
 			const random = choices[Math.floor(Math.random() * choices.length)];
@@ -25,7 +30,7 @@ function RandomChoice() {
 
 			<RandomChoiceAdd onAdd={addChoice} />
 
-			<RandomChoiceList choices={choices} />
+			<RandomChoiceList choices={choices} onRemove={removeChoice} />
 
 			{choices.length > 0 && (
 				<>
